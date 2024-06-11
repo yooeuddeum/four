@@ -33,4 +33,9 @@ ${formComponent(formAction, formmethod)}`;
 const renderApp = (formAction, formmethod) => {
   const appDiv = document.getElementById("root");
   appDiv.innerHTML = App(formAction, formmethod);
-}
+};
+
+// * 예시로 "/submit" 액션과 "post" 메서드를 사용하여 렌더링
+document.addEventListener("DOMContentLoaded", () => {
+  renderApp("/submit", "post");
+});
