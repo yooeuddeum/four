@@ -22,3 +22,15 @@ const formComponent = (action, method) => {
   </form>
   `;
 };
+
+// * 모든 컴포넌트를 조합하는 함수
+const App = (formAction, formmethod) => `
+<h1>함수의 리턴은</h1>
+<h2>사람의 머리를 맑게 해준다.</h2>
+${formComponent(formAction, formmethod)}`;
+
+// * 페이지가 로드될 때 컴포넌트를 렌더링
+const renderApp = (formAction, formmethod) => {
+  const appDiv = document.getElementById("root");
+  appDiv.innerHTML = App(formAction, formmethod);
+}
