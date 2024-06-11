@@ -10,7 +10,7 @@ const getUserInfo = () => {
 const formComponent = (action, method) => {
   const userInfo = getUserInfo();
   return `
-  <form action = "${acrion}" method= "${method}">
+  <form action = "${action}" method= "${method}">
   <label for = "name">이름:<label>
   <input type ="text" id = "name" name= "name" value = "${userInfo.name}" required>
   <label for = "age">나이:<label>
