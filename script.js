@@ -7,6 +7,7 @@ const getUserInfo = () => {
   };
 };
 
+// * 폼 컴포넌트
 const formComponent = (action, method) => {
   const userInfo = getUserInfo();
   return `
