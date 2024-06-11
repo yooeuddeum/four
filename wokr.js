@@ -1,4 +1,4 @@
-function formatHTML(language) {
+function formatHTML(language = "korean") {
   let htmlData = {
     titleOne: "유으뜸",
     titleTwo: "yueuddeum",
