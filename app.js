@@ -11,4 +11,4 @@ const a = (name, age, job) => {
 const b = a("유으뜸", 13, "수강생");
 console.log("첫번째 b:", b);
 b.address = "대전";
-console.log("두전째 b:", b);
+console.log("두번째 b:", b);
