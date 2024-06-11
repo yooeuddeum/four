@@ -10,13 +10,18 @@
     <script>
       const root = document.getElementById("root");
 
-      const h1Component = () => {
-        return `<h1>유으뜸</h1>`;
+      const h1Component = (textnode) => {
+        return `<h1>${textnode}</h1>`;
       };
 
       const app = () => {
-        return `${h1Component()}`;
+        return `
+        ${h1Component("유")}
+        ${h1Component("으")}
+        ${h1Component("뜸")}
+        `;
       };
+      console.log(app());
 
       const render = () => {
         root.innerHTML = app();
