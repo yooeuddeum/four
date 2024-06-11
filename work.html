@@ -10,15 +10,15 @@
     <script>
       const root = document.getElementById("root");
 
-      const h1Component = (textnode) => {
-        return `<h1>${textnode}</h1>`;
+      const tagComponent = (tagname,textnode) => {
+        return `<${tagname}>${textnode}</${tagname}>`;
       };
 
       const app = () => {
         return `
-        ${h1Component("유")}
-        ${h1Component("으")}
-        ${h1Component("뜸")}
+        ${tagComponent("h1","유")}
+        ${tagComponent("h2","으")}
+        ${tagComponent("h3","뜸")}
         `;
       };
       console.log(app());
